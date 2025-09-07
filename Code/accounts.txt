@@ -1,0 +1,9 @@
+Acct  Last Name       First Name    Balance
+1     Mckernan        Patrick         50.00
+2     Smith           Ann            150.00
+3     Waters          Roger          -50.00
+4     Moon            Keith          -67.00
+6     Osborne         Ozzy           366.00
+7     Johansen        Scarlet         69.00
+8     Karabela        Lori           400.00
+9     Crosby          Sidney         345.00

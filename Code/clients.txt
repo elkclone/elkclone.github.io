@@ -1,0 +1,13 @@
+4 larry 34.09
+5 sally 380.00
+6 stevie 450.00
+1 james 123.99
+2 susan 300.00
+3 allen 200.00
+7 craig 56.99
+8 lisa 666.00
+9 laura 99.00
+10 ZedDEAD 999.00
+11 Readhead 100.00
+1 james -150.00
+8 lisa -666.00

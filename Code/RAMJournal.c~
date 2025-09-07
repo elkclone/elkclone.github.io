@@ -1,0 +1,67 @@
+// Creating a random access Journal of transactions sequentially
+// Ref: C How to Program. Paul and Harvey Deitel p488.
+
+#include <stdio.h>
+
+// make a structure to define clientData
+struct clientData {
+  unsigned int acctNum;  // account number
+  char LastName[15]; // account last name
+  char FirstName[10]; // account first name
+  double balance; //  account balance
+};
+
+int main(void)
+{
+  FILE *cfPtr; // accounts.dat file pointer
+
+  // fopen opens the file; exits if file can't be opened.
+
+  if ((cfPtr = fopen("accounts.dat", "wb")) == NULL) {
+    puts("File could not be opened. wtf!");
+  }
+  else {
+    // create a new instance of clientData structure named blankClient
+    // with default information.
+
+    struct clientData blankClient = {0, "", "", 0.0};
+
+    // output 100 blank records to a file using fwrite. fwrite will
+    // use the pointer to the file accounts.dat to hold 1 file of 100
+    // blank records but it could hold an array element of files
+    // each with 100 record lists. :D
+
+    for (unsigned int i =1; i <=100; ++i) {
+      fwrite(&blankClient, sizeof(struct clientData), 1, cfPtr);
+    }
+    fclose (cfPtr);  // fclose closes the file
+  }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

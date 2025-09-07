@@ -1,0 +1,30 @@
+c code for simple black jack card game using stack data structures
+Thinking
+Kicking off 5 searches
+Looking at 86 sites
+Putting it all together
+To create a simple Blackjack card game using stacks in C, you will implement a deck of cards as a stack data structure
+. A linked list is the ideal way to implement a dynamic stack in C, since it can grow and shrink as cards are dealt and played.
+The game logic will involve shuffling the deck, dealing cards, and comparing the player's and dealer's hands. 
+Core C functions
+Stack implementation using a linked list
+A stack in C can be implemented using a struct for a node and a pointer to the top of the stack. 
+
+    struct Card: Represents a single card with its value.
+    struct Node: Represents a node in the linked list, containing a Card and a pointer to the next node.
+    struct Stack: The stack itself, with a pointer to the top node.
+    push(): Adds a card to the top of the stack.
+    pop(): Removes and returns the card from the top of the stack.
+    isEmpty(): Checks if the stack is empty. 
+
+Game logic using stacks
+The overall game flow will use three stacks: one for the main deck, one for the player's hand, and one for the dealer's hand.
+
+    Initialization: Create a 52-card deck and push the cards onto the deck stack.
+    Shuffling: Randomize the deck stack by repeatedly popping all cards into a temporary array, shuffling the array, and pushing the
+    cards back onto the stack.
+    Dealing: Pop two cards from the deck stack and push them onto the player's and dealer's hand stacks.
+    Gameplay loop:
+        Prompt the player to "hit" (take another card from the deck stack) or "stand" (end their turn).
+        Implement logic to handle aces (counting as 1 or 11) and determine hand totals.
+    Conclusion: Compare the final hands to determine the winner, and print the result. 
